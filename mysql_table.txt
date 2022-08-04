@@ -1,6 +1,7 @@
 CREATE TABLE studentTBL(
 	std_no INTEGER primary key,
     std_name VARCHAR(20)  not null,
+	major VARCHAR(40) not null,
     age INTEGER  not null,
     rsrv_cnt INTEGER not null,
     loan_cnt INTEGER not null,
