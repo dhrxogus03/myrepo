@@ -6,20 +6,20 @@ public class StudentVO {
 	private String std_name;
 	private String major;
 	private int age;
-	private int rsrv_cnt;
+	private int rsvs_cnt;
 	private int loan_cnt;
 	private String stop_date;
 	
 	public StudentVO() {}
 	
-	public StudentVO(int std_no,String std_name,String major,int age,int rsrv_cnt,int load_cnt,String stop_date) {
+	public StudentVO(int std_no,String std_name,String major,int age,int rsvs_cnt,int loan_cnt,String stop_date) {
 		
 		this.std_no = std_no;
 		this.std_name = std_name;
 		this.major = major;
 		this.age = age;
-		this.rsrv_cnt = rsrv_cnt;
-		this.loan_cnt = load_cnt;
+		this.rsvs_cnt = rsvs_cnt;
+		this.loan_cnt = loan_cnt;
 		this.stop_date = stop_date;
 	}
 	
@@ -30,7 +30,7 @@ public class StudentVO {
 		this.std_name = temp[1].trim();
 		this.major = temp[2].trim();
 		this.age = Integer.parseInt(temp[3].trim());
-		this.rsrv_cnt = Integer.parseInt(temp[4].trim());
+		this.rsvs_cnt = Integer.parseInt(temp[4].trim());
 		this.loan_cnt = Integer.parseInt(temp[5].trim());
 		this.stop_date = temp[6].trim();
 	}
@@ -67,20 +67,20 @@ public class StudentVO {
 		this.age = age;
 	}
 
-	public int getRsrv_cnt() {
-		return rsrv_cnt;
+	public int getRsvs_cnt() {
+		return rsvs_cnt;
 	}
 
-	public void setRsrv_cnt(int rsrv_cnt) {
-		this.rsrv_cnt = rsrv_cnt;
+	public void setRsvs_cnt(int rsrv_cnt) {
+		this.rsvs_cnt = rsrv_cnt;
 	}
 
 	public int getLoan_cnt() {
 		return loan_cnt;
 	}
 
-	public void setLoan_cnt(int load_cnt) {
-		this.loan_cnt = load_cnt;
+	public void setLoan_cnt(int loan_cnt) {
+		this.loan_cnt = loan_cnt;
 	}
 
 	public String getStop_date() {
