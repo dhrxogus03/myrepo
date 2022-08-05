@@ -7,19 +7,18 @@ public class BookVO {
     private String writer;
     private int price;
     private String pay_date;
-    private int rsrv_people;
+    private int rsvs_people;
     private String loan_yn;
     
     public BookVO() {}
     
-    public BookVO(int book_no,String book_name,String writer,int price,String pay_date,int rsrv_people,String loan_yn) {
-    	
+    public BookVO(int book_no,String book_name,String writer,int price,String pay_date,int rsvs_people,String loan_yn) {
     	this.book_no = book_no;
     	this.book_name = book_name;
     	this.writer = writer;
     	this.price = price;
     	this.pay_date = pay_date;
-    	this.rsrv_people = rsrv_people;
+    	this.rsvs_people = rsvs_people;
     	this.loan_yn = loan_yn;
     }
     
@@ -32,7 +31,7 @@ public class BookVO {
     	this.writer = temp[2].trim();
     	this.price = Integer.parseInt(temp[3].trim());
     	this.pay_date = temp[4].trim();
-    	this.rsrv_people = Integer.parseInt(temp[5].trim());
+    	this.rsvs_people = Integer.parseInt(temp[5].trim());
     	this.loan_yn = temp[6].trim();
     }
 
@@ -76,12 +75,12 @@ public class BookVO {
 		this.pay_date = pay_date;
 	}
 
-	public int getRsrv_people() {
-		return rsrv_people;
+	public int getRsvs_people() {
+		return rsvs_people;
 	}
 
-	public void setRsrv_people(int rsrv_people) {
-		this.rsrv_people = rsrv_people;
+	public void setRsvs_people(int rsrv_people) {
+		this.rsvs_people = rsrv_people;
 	}
 
 	public String getLoan_yn() {
